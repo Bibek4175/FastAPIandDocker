@@ -1,0 +1,12 @@
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./app:/HelloWorld/app
+   
+
